@@ -39,16 +39,16 @@
     <div class="modal fade" id="confirmModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header text-body">
                     <h1 class="modal-title fs-5" id="staticBackdropLabel">Are you sure?</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body text-body">
                     Are you sure you want to reset the counter? If you are reading this, then the answer is no.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <a href="scripts/reset-counter.php" class="btn btn-light fw-bold border-white bg-white">Reset Counter</a>
+                    <a href="scripts/reset-counter.php" class="btn btn-light fw-bold bg-primary text-light">Reset Counter</a>
                 </div>
             </div>
         </div>
