@@ -29,6 +29,11 @@
     }
 </script>
 
+<?php
+$lines = file("lines.txt");
+$message = $lines[array_rand($lines)];
+?>
+
 <body class="d-flex h-100 text-center text-bg-dark">
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3">
         <button type="button" class="btn btn-light fw-bold border-white bg-white" data-bs-toggle="modal" data-bs-target="#confirmModal">
@@ -58,8 +63,7 @@
         <div class="align-self-center">
             <h1>It's been:</h1>
             <p id="timestamp" class="lead"></p>
-            <!-- <div id="timestamp"></div> -->
-            <h3>It's over.</h3>
+            <h3><?= $message ?></h3>
         </div>
     </div>
 </body>
