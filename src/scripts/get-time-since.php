@@ -16,11 +16,23 @@ $minutes = (int)$minutes;
 $hours = (int)$hours;
 
 if ($hours != 0) {
-    $s = $hours . " hours, " . $minutes . " minutes, " . $seconds . " seconds.";
+    if ($hours == 1){
+        $s = $hours . " hour, " . $minutes . " minutes, " . $seconds . " seconds.";
+    } else {
+        $s = $hours . " hours, " . $minutes . " minutes, " . $seconds . " seconds.";
+    }
 } else if ($minutes != 0) {
-    $s = $minutes . " minutes, " . $seconds . " seconds.";
+    if ($minutes == 1) {
+        $s = $minutes . " minute, " . $seconds . " seconds.";
+    } else {
+        $s = $minutes . " minutes, " . $seconds . " seconds.";
+    }
 } else {
-    $s = $seconds . " seconds.";
+    if ($seconds == 1) {
+        $s = $seconds . " second.";
+    } else {
+        $s = $seconds . " seconds.";
+    }
 }
 
 echo ($s)
