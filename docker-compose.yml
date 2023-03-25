@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  # PHP/Web server
+  web:
+    build: .
+    # depends_on:
+    #   - db
+    ports:
+      - "${HTTPD_PORT}:80"
+    env_file:
+    - .env
+    volumes:
+      - ./src/:/var/www/html:Z
+
+  # # Composer (PHP package manager, runs once)
+  # composer:
+  #   image: composer/composer
+  #   depends_on:
+  #     - web
+  #   ports:
+  #     - "9001:9000"
+  #   volumes:
+  #     - "./src:/composer"
+  #   working_dir: /composer
+  #   command: install

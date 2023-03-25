@@ -1,0 +1,17 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 9906,
+            "driver": "MariaDB",
+            "name": "Raceway CMS DB",
+            "database": "rr_web",
+            "username": "root",
+            "password": "Td8sxP8tiqFXzD"
+        }
+    ]
+}
